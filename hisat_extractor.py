@@ -1,4 +1,9 @@
 #!~/.conda/envs/NADcapturedSeq/bin/python
+# This python script takes takes a hisat2 logfile as input and extracts the alignmentrates to put them in a .csv file
+# it works in chunks so it can read large files in memory without any issues.
+# Note that the script generating the logfile is supposed to be similar as the hisat2_spikes.sh file because it relies on the "echo" line as a separator 
+# and to gater additional information about the kind of spike 
+
 
 import pandas as pd
 import sys
