@@ -8,6 +8,10 @@ To reproduce the software used in this project use:
 
 Note that standart anaconda or miniconda is required. 
 
+## Software Workflow
+The Software used and the different steps are illustrated in the figure below. For further information have a look in the methods part in the protocol.  
+![Workflow information](./bioinfo_workflow.png)  
+
 ## Filestructure to make code work
 For siplicity reasons each workstep takes an entire folder as input and outputs in another folder. For example cutadapt takes the data from *00_original_data* and puts the processed output in *01_trim5_demultiplexed_fastq*. This covers more storage but makes it more clearly aranged. I decided to do so because i can redo and start each processing step at each given point in the pipeline. For a final pipeline I recommend to automate evrything with pipes or a pipeline software.
 The data from the sequencing facility was supplied as shown in Folder *00_original_data/unpacked*. Make sure to adapt the filestructure when reusing scripts.
