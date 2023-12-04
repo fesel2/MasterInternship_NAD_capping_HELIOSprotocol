@@ -1,15 +1,15 @@
 # Master Internship
-On this page i will host all scripts i was using during my internship at Jäschke Lab. 
+On this page i will host all scripts i was using during my internship at Jäschke Lab. In summary, the HELIOS NAD Seq protocol is applied to human embryonic kidney cells. The HELIOS protocol is a further development of the NAD capture Seq protocol. Both protocols aim to purify and sequence RNA fragments with the non-canonical 5' modification NAD. My task was to carry out the purification and library preparation in the laboratory, as well as the bioinformatic analysis on the computational cluster. Finally, I carried out individual downstream analyses such as overrepresentation analysis, differential expression and statistical tests with Python. In general, this project has the potential to standardize and automate all analyses associated with the protocol. The basic idea and model was provided by the data framework anndata, which has already established itself for single cell analyses. With a few changes, all the analysis steps from the Jupyternotebooks could be rebuilt in an object-oriented way to create software similar to scanpy.
 
 ## Reproduce Software Environment
-To reproduce the software used in this project use:
+To reproduce the software environment used in this project use:
 
 `conda env create -f environment.yml`
 
-Note that standart anaconda or miniconda is required. 
+Note that standard anaconda or miniconda is required. 
 
 ## Software Workflow
-The Software used and the different steps are illustrated in the figure below. For further information have a look in the methods part in the protocol.  
+The Software used and the different steps are illustrated in the figure below. For further information have a look in the methods part in the protocol, which is the attached pdf-file.  
 ![Workflow information](./bioinfo_workflow.png)  
 
 ## Filestructure to make code work
